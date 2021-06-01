@@ -1,5 +1,5 @@
 class User < ApplicationRecord
-  has_many :contract, dependent: :destroy
+  has_many :contracts, dependent: :destroy
 
   validates :name,     presence: true
   validates :email,    presence: true, uniqueness: true

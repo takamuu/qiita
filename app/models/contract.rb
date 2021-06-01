@@ -1,9 +1,10 @@
 class Contract < ApplicationRecord
   belongs_to :user
-  has_many :product
+  belongs_to :product
 
-  validates :user,            presence: true
-  validates :product,         presence: true
+  validates :user_id,         presence: true
+  validates :product_id,      presence: true
+  validates :product_name,    presence: true
   validates :contract_money,  presence: true
   validates :contract_status, presence: true
 
