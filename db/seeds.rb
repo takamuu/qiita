@@ -1,6 +1,6 @@
-ActiveRecord::Base.connection.execute("TRUNCATE TABLE users RESTART IDENTITY CASCADE")
-ActiveRecord::Base.connection.execute("TRUNCATE TABLE products RESTART IDENTITY CASCADE")
-ActiveRecord::Base.connection.execute("TRUNCATE TABLE contracts RESTART IDENTITY CASCADE")
+# ActiveRecord::Base.connection.execute("TRUNCATE TABLE users RESTART IDENTITY CASCADE")
+# ActiveRecord::Base.connection.execute("TRUNCATE TABLE products RESTART IDENTITY CASCADE")
+# ActiveRecord::Base.connection.execute("TRUNCATE TABLE contracts RESTART IDENTITY CASCADE")
 
 user1 = User.create!(name: "akagi", email: "akagi@example.com", password: "password")
 user2 = User.create!(name: "uozumi", email:"uozumi@example.com", password: "password")
